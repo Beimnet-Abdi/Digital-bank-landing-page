@@ -1,3 +1,8 @@
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+}
+
 .logo {
   width: 140px;
 }
@@ -94,82 +99,6 @@
   transform: none;
 }
 
-.hero-section p {
-  color: rgba(255, 255, 255, 0.9);
-  font-family: "Kaushan Script", cursive;
-}
-.hero-button {
-  background-color: transparent; /* luxury minimalist look */
-  color: #ffffff; /* pure white text */
-  border: 2px solid #ffffff; /* white border */
-  padding: 12px 30px; /* adjust size */
-  font-size: 1.5rem;
-  font-family: "Kaushan Script", cursive;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 5px; /* slightly rounded corners */
-  margin-top: 20px;
-}
-
-/* Hover effect */
-.hero-button:hover {
-  background-color: rgba(255, 255, 255, 0); /* button fills white on hover */
-  color: #000000; /* text becomes black */
-  transform: translateY(-2px); /* subtle lift effect */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Optional: active click effect */
-.hero-button:active {
-  transform: translateY(0px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.hero-section {
-  height: 100vh; /* full screen height */
-  width: 100%;
-  background-image: url("../images/hoodieCollection.jpg"); /* your image path */
-  background-size: cover; /* fills screen exactly like that site */
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */ /* 🔥 parallax-like behavior */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .hero-image {
-
-  min-width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-} */
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff; /* Adjust for contrast */
-  text-align: center;
-  font-size: 4rem; /* Adjust size as needed */
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  z-index: 2; /* text ABOVE overlay */
-}
-.hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0; /* shorthand for top/right/bottom/left: 0 */
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-/* .container {
-  padding: 0;
-} */
 nav {
   display: flex;
   align-items: center;
@@ -201,4 +130,55 @@ nav {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   transition: 0.1s;
+}
+header {
+  width: 100%;
+  height: 150vh;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right;
+}
+.image-container {
+  position: relative; /* Needed for overlay positioning */
+  width: 400px; /* Set width for the container */
+  /* height will auto-adjust based on the background image */
+  margin-left: 90%;
+}
+
+.image-container .bg-image {
+  width: 120%; /* Fill container width */
+  display: block;
+}
+
+.image-container .overlay-image {
+  position: absolute; /* Position relative to container */
+  top: 20px; /* Adjust vertical position */
+  left: 20%; /* Adjust horizontal position */
+  width: 100%; /* Set width for overlay image */
+  pointer-events: none; /* Optional: allows clicks to pass through */
+}
+
+.header-text {
+  margin-top: 15%;
+  margin-left: 15%;
+}
+.header-text h2 {
+  font-weight: 700;
+}
+.header-text p {
+  font-weight: 300;
+  align-items: left;
+  margin-right: 30%;
+}
+
+.items-grid {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
+}
+.grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
