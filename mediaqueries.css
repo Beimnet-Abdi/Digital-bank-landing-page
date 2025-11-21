@@ -1,0 +1,33 @@
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  .menu-links {
+    align-items: center;
+    justify-content: space-between;
+    position: rela;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-content {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .contact-image img {
+    max-width: 300px;
+  }
+}

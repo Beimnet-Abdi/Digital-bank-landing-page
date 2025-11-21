@@ -1,0 +1,204 @@
+.logo {
+  width: 140px;
+}
+#hamburger-nav {
+  display: none;
+  top: 20px;
+  right: 20px;
+}
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all0.3 ease-in-out;
+  z-index: 9999;
+}
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: none;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+.menu-links li {
+  list-style: none;
+}
+.menu-links.open {
+  max-height: 300px;
+}
+#hamburger-nav {
+  display: none;
+  top: 20px;
+  right: 20px;
+}
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all0.3 ease-in-out;
+  z-index: 9999;
+}
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: none;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+.hamburger-icon span:first-child {
+  transform: none;
+}
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hero-section p {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Kaushan Script", cursive;
+}
+.hero-button {
+  background-color: transparent; /* luxury minimalist look */
+  color: #ffffff; /* pure white text */
+  border: 2px solid #ffffff; /* white border */
+  padding: 12px 30px; /* adjust size */
+  font-size: 1.5rem;
+  font-family: "Kaushan Script", cursive;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px; /* slightly rounded corners */
+  margin-top: 20px;
+}
+
+/* Hover effect */
+.hero-button:hover {
+  background-color: rgba(255, 255, 255, 0); /* button fills white on hover */
+  color: #000000; /* text becomes black */
+  transform: translateY(-2px); /* subtle lift effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: active click effect */
+.hero-button:active {
+  transform: translateY(0px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section {
+  height: 100vh; /* full screen height */
+  width: 100%;
+  background-image: url("../images/hoodieCollection.jpg"); /* your image path */
+  background-size: cover; /* fills screen exactly like that site */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */ /* 🔥 parallax-like behavior */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .hero-image {
+
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+} */
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff; /* Adjust for contrast */
+  text-align: center;
+  font-size: 4rem; /* Adjust size as needed */
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2; /* text ABOVE overlay */
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand for top/right/bottom/left: 0 */
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* .container {
+  padding: 0;
+} */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-wrap: wrap;
+ */
+}
+.logo {
+  width: 140px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  transition: 0.1s;
+}
